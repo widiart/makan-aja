@@ -1,10 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
+import Main from './components/Main'
+import Navbar from './components/Navbar'
 import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+ReactDOM.createRoot(document.getElementById('nav') as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <Navbar />
   </React.StrictMode>
 )
+
+ReactDOM.createRoot(document.getElementById('main') as HTMLElement).render(
+  <React.StrictMode>
+    <Main />
+  </React.StrictMode>
+)
+
